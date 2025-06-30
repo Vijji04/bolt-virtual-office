@@ -10,7 +10,7 @@ export function createPlayer(k: any, config: PlayerConfig): GameObj {
   
   // Create a more detailed player character
   const player = k.add([
-    k.rect(16, 16),
+    k.rect(22, 22),
     k.color(0, 150, 255), // Blue body
     k.pos(config.pos),
     k.area(),
@@ -28,40 +28,40 @@ export function createPlayer(k: any, config: PlayerConfig): GameObj {
 
   // Add player details (head)
   k.add([
-    k.rect(12, 8),
+    k.rect(16, 12),
     k.color(255, 220, 177), // Skin color
-    k.pos(config.pos.x + 2, config.pos.y - 6),
+    k.pos(config.pos.x + 3, config.pos.y - 12),
     k.outline(1, k.rgb(200, 180, 140)),
     k.z(1),
     {
       follow: player,
-      offsetX: 2,
-      offsetY: -6,
+      offsetX: 3,
+      offsetY: -12,
     }
   ]);
 
   // Add eyes
   k.add([
-    k.rect(2, 2),
+    k.rect(3, 3),
     k.color(0, 0, 0),
-    k.pos(config.pos.x + 4, config.pos.y - 4),
+    k.pos(config.pos.x + 6, config.pos.y - 8),
     k.z(2),
     {
       follow: player,
-      offsetX: 4,
-      offsetY: -4,
+      offsetX: 6,
+      offsetY: -8,
     }
   ]);
 
   k.add([
-    k.rect(2, 2),
+    k.rect(3, 3),
     k.color(0, 0, 0),
-    k.pos(config.pos.x + 8, config.pos.y - 4),
+    k.pos(config.pos.x + 12, config.pos.y - 8),
     k.z(2),
     {
       follow: player,
-      offsetX: 8,
-      offsetY: -4,
+      offsetX: 12,
+      offsetY: -8,
     }
   ]);
 

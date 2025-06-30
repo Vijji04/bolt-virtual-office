@@ -49,22 +49,22 @@ export const CUSTOM_FURNITURE_ASSETS: FurnitureAsset[] = [
     imageUrl: 'https://i.ibb.co/7xSvVpRn/Table.png',
     // fallbackColor: [139, 69, 19] // Brown
   },
-  {
-    id: 'office_chair',
-    name: 'Office Chair',
-    width: 32,
-    height: 32,
-    imageUrl: 'https://images.pexels.com/photos/586344/pexels-photo-586344.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop',
-    fallbackColor: [74, 74, 74] // Dark gray
-  },
-  {
-    id: 'plant_pot',
-    name: 'Office Plant',
-    width: 24,
-    height: 32,
-    imageUrl: 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg?auto=compress&cs=tinysrgb&w=24&h=32&fit=crop',
-    fallbackColor: [34, 139, 34] // Forest green
-  },
+  // {
+  //   id: 'office_chair',
+  //   name: 'Office Chair',
+  //   width: 32,
+  //   height: 32,
+  //   imageUrl: 'https://images.pexels.com/photos/586344/pexels-photo-586344.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop',
+  //   fallbackColor: [74, 74, 74] // Dark gray
+  // },
+  // {
+  //   id: 'plant_pot',
+  //   name: 'Office Plant',
+  //   width: 24,
+  //   height: 32,
+  //   imageUrl: 'https://images.pexels.com/photos/1084199/pexels-photo-1084199.jpeg?auto=compress&cs=tinysrgb&w=24&h=32&fit=crop',
+  //   fallbackColor: [34, 139, 34] // Forest green
+  // },
   {
     id: 'computer_monitor',
     name: 'Computer Monitor',

@@ -102,7 +102,7 @@ export default function GameLayout() {
 
   if (error) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-slate-900 to-slate-700 p-4">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-pink-100 to-amber-100 p-4">
         <div className="bg-red-900/20 border border-red-500 rounded-lg p-6 max-w-md">
           <h2 className="text-red-400 text-xl font-bold mb-2">Game Error</h2>
           <p className="text-red-300">{error}</p>
@@ -118,7 +118,23 @@ export default function GameLayout() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-slate-900 to-slate-700 p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-pink-100 to-amber-100 p-4">
+      {/* Top-right floating image with hyperlink */}
+      <a
+        href="https://bolt.new"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Go to Bolt New"
+        className="fixed top-4 right-4 z-50"
+        tabIndex={0}
+      >
+        <img
+          src="/assets/black_circle_360x360.png"
+          alt="Black Circle"
+          className="w-24 h-24 pointer-events-auto select-none hover:scale-105 transition-transform"
+          style={{ objectFit: "contain" }}
+        />
+      </a>
       {/* Game Container */}
       <div className="relative">
         {/* Loading Overlay - only show after client hydration and size is set */}
